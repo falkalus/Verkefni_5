@@ -19,11 +19,11 @@ while(myvar<2000){ // While á meðan my var er minna en 2000
 }
 
 //CARD
-var names = ["The Wolf","Hunger Games","IT","Scareface","The Martain"];   //Array er leið til þess að geyma fleirri en eitt gildi í breytu.
-var stars = ["* * * * *","* * *","* * * *","* * * * *","* * * *"];
+var names = ["The Wolf","Hunger Games","IT","Scareface","The Martain","Jurassic Park","Misery","Terminator","Totoro","Ghostbusters"];   //Array er leið til þess að geyma fleirri en eitt gildi í breytu.
+var stars = ["* * * * *","* * *","* * * *","* * * * *","* * * *","* * * *","* *","* * *","* * * * *","* * * *"];
 var time = [ 11, 13, 15, 15, 17, 19, 20, 21, 23, 1];
-var style = [ "Drama", "Science Fiction", "Horror"];
-var photos = ["wolf.jpg", "hunger.jpg","it.jpg","scar.jpg","martain.jpg",];
+var style = [ "Drama","Science Fiction","Horror","Crime","Science Fiction","Science Fiction","Drama","Thriller","Fantasy","Comedy"];
+var photos = ["wolf.jpg", "hunger.jpg","it.jpg","scar.jpg","martain.jpg","park.jpg","misery.jpg","term.jpg","totoro.jpg","ghost.jpg"];
 
 
 for(var i = 0; i<names.length;i++){
