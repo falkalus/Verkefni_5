@@ -11,11 +11,11 @@ https://community.algolia.com/instantsearch.js/v2/examples/media/
 
 
 var myDiv = document.querySelector("div");
-for(var i = 0; i<110; i+=5){ //for er fyrir hvern af einhverju
+for(var i = 0; i<110; i+=5){ 
 }
 var myvar = 0;
-while(myvar<2000){ // While á meðan my var er minna en 2000
-   myvar+=13;      //þarf að vera minna en breytiþátturinn 2000 svo að endalaus loopa myndist ekki
+while(myvar<2000){ 
+   myvar+=13;      
 }
 
 //CARD
@@ -43,16 +43,18 @@ for(var i = 0; i<names.length;i++){
 var button = document.querySelector("button"); //arrays breytilegt milli kassa
 var titleInput = document.querySelector("#titill");
 var formsDiv = document.querySelector("div");
-button.onclick = function(){
-
-	var r = Math.floor(Math.random() * photos.length);
-	var d = Math.floor(Math.random() * time.length);
-
-    formsDiv.innerHTML += `
-        <div class="forms" style="background-image: url(img/red.jpg);">
-        <h1>${titleInput.value}</h1>
-
-        </div>
-    `
-    titleInput.value="";
+function myFunction() {
+var input, filter, h2, p, i;
+    input = document.getElementById("input");
+    filter = input.value.toUpperCase();
+    div = document.getElementByClass("card");
+    h2 = h2.getElementsByTagName("h2");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
 }
