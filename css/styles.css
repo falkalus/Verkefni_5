@@ -4,48 +4,39 @@ body {
 	box-sizing: border-box; 
 }
 button {
-	margin-top: 15px;
 	padding: 10px 40px;
 	border: none;
-	background-color: crimson;
+	background-color: orange;
 	border-radius: 20px;
+	margin-left: 10px;
 }
 #wrapper {
 	display: flex;
     justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     text-align: center;	
 }
 .card {
-	background-size: cover;
-	background-position: center;
 	color: #fff;  
-	margin: 20px;
+	margin: 20px 20px 20px 40px;
+	padding: 10px;
+ 	width: 30%;
+	 
 }
-.card img,
-.forms img {
-	width: 20%;
+.card img {
+	width: 40%;
 }
-.card h2,
-.forms h2 {
-	font-style: italic;
+.card span {
+	color: orange;
+	font-size: 40px;
 }
 .forms {
-    color: #fff;
-    background-size: cover;
-	background-position: center;
-	box-sizing: border-box; 
 	margin: 20px;
 }
 .input {
 	display: flex;
-	justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;	
-
+	justify-content: flex-start;
+    flex-direction: row;
 }
 .input input {
 	border-radius: 10px;
