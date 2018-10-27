@@ -9,7 +9,6 @@ https://community.algolia.com/instantsearch.js/v2/examples/media/
 Þ.e. öll kortin með öllum (5 mismunandi gögnum/object properties)
 */
 
-
 //CARD eitt array með 5 properties
 var myDiv = document.querySelector("div");
 
@@ -79,7 +78,6 @@ var movies = [
   },
 ]
 
-
 for (var i = 0; i<movies.length;i++) {
    myDiv.innerHTML +=
    `
@@ -93,25 +91,31 @@ for (var i = 0; i<movies.length;i++) {
    `
 }
 
-//FORMS
-
+//FORMS Search
 var button = document.querySelector("button"); //arrays breytilegt milli kassa
 var titleInput = document.querySelector("#titill");
 var formsDiv = document.querySelector("div");
 
-
-function myFunction() {
-    var input, filter, h2, p, i;
-    input = document.getElementById("input");
-    filter = input.value.toUpperCase();
-    div = document.getElementByClass("card");
-    h2 = h2.getElementsByTagName("h2");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
+button.onclick = function search() {
+  //sækja texta úr input   
+  var input = document.getElementById("titill");
+  var filter = input.value.toUpperCase();
+  //ef það er enginn texti þá gerist ekkert
+ if (filter == "") {
+    return;
+  }
+  var cards = document.getElementsByClassName("card");
+  //fyrir hverja kvikmynd:
+  for (var i = 0; i<movies.length;i++) {
+    //  bera saman texta of tiltil
+    //  Ef titill inniheldur ekki texta:
+    if (movies[i].names.toUpperCase() == filter) {
+      cards[i].style.display = "";
+    } else {
+      cards[i].style.display = "none";  
     }
+  }
 }
+
+  
+ 
